@@ -1,0 +1,24 @@
+{
+  "name": "cssgrid",
+  "version": "1.0.0",
+  "description": "Example of CSS Grid",
+  "main": "index.js",
+  "scripts": {
+    "less:watch": "watch-lessc -i ./public/less/style.less -o ./public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeantroiani/CSSGrid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeantroiani/CSSGrid/issues"
+  },
+  "homepage": "https://github.com/jeantroiani/CSSGrid#readme",
+  "devDependencies": {
+    "less": "^2.7.2",
+    "less-watcher": "^1.2.0",
+    "watch-lessc": "0.0.3"
+  }
+}
