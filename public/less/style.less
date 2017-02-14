@@ -1,0 +1,91 @@
+html, body, h1, h2, h3, p {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
+
+.landing-page {
+    height: 100vh;
+    display: grid;
+    grid-column-gap: 4px;
+    grid-template-rows: 180px auto 180px;
+    grid-template-columns: repeat(12, 1fr);
+    background: data-uri('../images/background.png') no-repeat;
+}
+
+.brand-icon {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    align-self: end;
+}
+
+.main-title {
+    grid-column-start: 5;
+    grid-column-end: span 5;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    align-self: end;
+    background-image: data-uri('../images/background_brand.svg');
+    background-repeat: no-repeat;
+}
+
+.content {
+    grid-column-start: 2;
+    grid-column-end: span 10;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    color: white;
+}
+
+.action-group {
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    background: data-uri('../images/backgroundBottom.png') no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-column-gap: 4px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.action {
+    background: data-uri('../images/availableOnAppStore.svg') no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 127px;
+    text-indent: -999px;
+    line-height: 0; 
+    font-size: 0;
+    color: transparent;
+    display: inline-block;
+    grid-column-start: 2;
+    grid-column-end: span 5;
+    
+    &:last-of-type {
+        background-image: data-uri('../images/googlePlay@2x.svg');
+
+        grid-column-start: 7;
+        grid-column-end: span 5;
+        justify-self: end;
+    }
+}

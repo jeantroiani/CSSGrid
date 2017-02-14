@@ -4,7 +4,7 @@
   "description": "Example of CSS Grid",
   "main": "index.js",
   "scripts": {
-    "less:watch": "watch-lessc -i ./public/less/style.less -o ./public/css"
+    "less:watch": "less-watch-compiler public/less public/css"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
   "homepage": "https://github.com/jeantroiani/CSSGrid#readme",
   "devDependencies": {
     "less": "^2.7.2",
-    "less-watcher": "^1.2.0",
+    "less-watch-compiler": "^1.4.2",
+    "watch-less": "0.0.4",
     "watch-lessc": "0.0.3"
   }
 }
